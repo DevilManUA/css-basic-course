@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f1f1f1;
+	color: #0f141e;
+	font: normal 16px "Roboto", sans-serif;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul,
+ol {
+	list-style: none;
+}
+.subtitle {
+	margin-bottom: 10px;
+	color: orange;
+}
+
+/* bg classes */
+.bg-green {
+	background-color: green;
+}
+.bg-yellow {
+	background-color: yellow;
+}
+.bg-blue {
+	background-color: blue;
+}
+
+/* info */
+.info {
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	width: 200px;
+	height: 150px;
+	border-radius: 28px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info__descr {
+	margin-left: 20px;
+}
+.info p {
+	color: #86898f;
+}
+
+/* social */
+.social,
+.hobbies,
+.exp,
+.contacts {
+	padding: 20px 20px;
+	color: #fff;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.social__item {
+	margin-bottom: 10px;
+}
+.social__item:last-child {
+	margin-bottom: 0;
+}
+.social__link {
+	color: coral;
+}
+
+/* hobbies */
+.hobbies__item {
+	margin-bottom: 10px;
+}
+.hobbies__item:last-child {
+	margin-bottom: 0;
+}
+
+/* exp */
+.table__exp {
+	color: #000;
+	width: 80%;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.table__exp td,
+th {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+/* contacts */
+.form__group {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.form__label {
+}
+.form__group div {
+	flex: 1 0 50%;
+}
+.form__input {
+	width: 95%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+	display: block;
+	padding: 10px 0;
+}
+.form__msg {
+	margin-bottom: 20px;
+}
+.msg {
+	resize: none;
+	width: 100%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.form__btn {
+	display: block;
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: tomato;
+	cursor: pointer;
+}
+.form__btn:hover {
+	background-color: tomato;
+	color: #fff;
+}
+
+@media (max-width: 600px) {
+	.info {
+		display: block;
+		text-align: center;
+	}
+}
